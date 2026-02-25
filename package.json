@@ -23,16 +23,23 @@
     "ai-agent",
     "plugin"
   ],
-  "author": "",
+  "author": "dwhoban",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/opencode-ai/opencode-ansible-language-server.git"
+    "url": "git+https://github.com/dwhoban/opencode-ansible-language-server.git"
   },
   "bugs": {
-    "url": "https://github.com/opencode-ai/opencode-ansible-language-server/issues"
+    "url": "https://github.com/dwhoban/opencode-ansible-language-server/issues"
   },
-  "homepage": "https://github.com/opencode-ai/opencode-ansible-language-server#readme",
+  "homepage": "https://github.com/dwhoban/opencode-ansible-language-server#readme",
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
