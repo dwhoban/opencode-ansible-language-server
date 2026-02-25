@@ -1,0 +1,21 @@
+---
+- name: Example Playbook
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: Install a package
+      ansible.builtin.apt:
+        name: nginx
+        state: present
+
+    - name: Start a service
+      ansible.builtin.service:
+        name: nginx
+        state: started
+
+    - name: Create a file
+      ansible.builtin.copy:
+        content: "Hello World"
+        dest: /tmp/test.txt
+        mode: "0644"

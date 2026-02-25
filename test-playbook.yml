@@ -1,0 +1,7 @@
+---
+- name: Test Playbook
+  hosts: localhost
+  tasks:
+    - name: Invalid task
+      invalid_module:
+        param: value
